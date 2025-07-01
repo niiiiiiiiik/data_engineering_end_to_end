@@ -1,0 +1,35 @@
+| Code               | What it stands for              | Plain-English meaning                                                                                                                                           | Typical % of discharges\*     |
+| ------------------ | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| **P0 – Pathway 0** | “Home, no new support”          | Patient goes straight back to their usual residence – no extra health or social-care package needed. Quick turn-round, e.g. simple day-case or ambulatory care. | \~50 % ([wardhadaway.com][1]) |
+| **P1 – Pathway 1** | “Home **with** support”         | Discharged home/hotel/hospice-at-home **with** new or additional re-ablement, rehab, community nursing or social-care visits.                                   | \~45 % ([wardhadaway.com][1]) |
+| **P2 – Pathway 2** | “Bed-based rehab”               | Needs short-term stay in a community hospital or step-down rehab bed before finally going home.                                                                 | \~4 % ([wardhadaway.com][1])  |
+| **P3 – Pathway 3** | “New care-home placement / EoL” | Cannot go back home; requires residential/nursing-home care (often permanent) or end-of-life bed.                                                               | \~1 % ([wardhadaway.com][1])  |
+
+[1]: https://www.wardhadaway.com/insights/updates/hospital-discharge-service-requirements-and-provisions-for-care-homes-during-the-pandemic/?utm_source=chatgpt.com "Hospital discharge service requirements and provisions for care ..."
+
+| Code   | NHS wording (headline)                                | What it really means                                                                                  |
+| ------ | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **A1** | Awaiting medical decision / formal discharge decision | Clinician hasn’t completed the final ward round, medical review or discharge paperwork.               |
+| **A2** | Awaiting community equipment & housing adaptations    | Grab-rails, hoists, ramps, bed-lifts etc. not yet fitted.                                             |
+| **A3** | Awaiting confirmation from community hub / SPOA       | Referral sent, but community ‘single-point-of-access’ hasn’t accepted / allocated.                    |
+| **A4** | Awaiting diagnostic test / results                    | Scan, endoscopy, bloods, etc. still outstanding.                                                      |
+| **A5** | Awaiting medicines to take home / discharge letter    | Pharmacy or documentation delay.                                                                      |
+| **A6** | Awaiting referral to community SPOA                   | Clerical delay getting paperwork to hub.                                                              |
+| **A7** | Awaiting therapy decision / review                    | Physio / OT needs to sign-off mobility, ADLs, safety.                                                 |
+| **A8** | Awaiting transport                                    | Ambulance or patient-transport not booked/arrived.                                                    |
+| **B1** | Homeless / no recourse to public funds                | No suitable address; council & charities still arranging accommodation.                               |
+| **B2** | Patient / family not in agreement                     | “Dad’s not ready yet”, dispute over destination, timing or care package.                              |
+| **B3** | Safeguarding / Court of Protection                    | Legal or safeguarding investigation still open.                                                       |
+| **B4** | IPC – avoid infection spread                          | Must stay in single room / ward isolation (e.g. Norovirus) until clear.                               |
+| **C**  | Care-transfer hub process                             | Hub is chasing funding approval, brokerage, or further referrals.                                     |
+| **D**  | Pathway 2 bed unavailable                             | Waiting for a rehabilitation bed in community unit.                                                   |
+| **E**  | Capacity not yet available                            | No slot in re-ablement team, domiciliary care, residential/nursing home, or community health service. |
+| **F**  | Repatriation / transfer to other acute trust          | Specialist treatment required elsewhere; bed or paperwork outstanding.                                |
+| **Z**  | No Plan                                               | Delay logged but cause not yet defined or no discharge plan in place.                                 |
+
+
+| Metric text in feed                                                                 | Bucket we use | Meaning                                                                                       |
+| ----------------------------------------------------------------------------------- | ------------- | --------------------------------------------------------------------------------------------- |
+| “Number of additional bed days, patients with length of stay of **7 days or over**” | **7-plus**    | Extra days accumulated once patient exceeded 7 days LOS and no longer met criteria to reside. |
+| “…**14 days or over**”                                                              | **14-plus**   | Same, but for 14-day threshold.                                                               |
+| “…**21 days or over / 21 + days**”                                                  | **21-plus**   | Long-stay cohort; highest cost & risk for deconditioning.                                     |
